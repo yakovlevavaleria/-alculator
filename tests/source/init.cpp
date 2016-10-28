@@ -33,11 +33,11 @@ SCENARIO("calculator div", "[div]") {
     
 	REQUIRE( rv == 1.25 );
 }
-SCENARIO("calculator pow", "[pow]") {
+SCENARIO("calculator pow4", "[pow4]") {
     float x = 6.0;
     float y = 1.0;
     
-    double rv = pow( x, y );
+    double rv = pow4( x, y );
     
 	REQUIRE( rv == 6.0 );
 }
