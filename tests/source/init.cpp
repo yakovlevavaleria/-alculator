@@ -1,50 +1,45 @@
 #include <calculator.hpp>
 #include <catch.hpp>
 
-SCENARIO("calculator sum", "[sum]") {
-    float x = 5.0;
-    float y = 4.0;
+  SCENARIO("calculator summary", "[summary]") {
+    float a = 2.0;
+    float b = 5.0;
     
-    double rv = sum( x, y );
+    float rv = summary(a,b);
     
-	REQUIRE( rv == 9.0 );
-}
-SCENARIO("calculator sub", "[sub]") {
-    float x = 5.0;
-    float y = 4.0;
-    
-    double rv = sub( x, y );
-    
-	REQUIRE( rv == 1.0 );
-}
-SCENARIO("calculator mult", "[mult]") {
-    float x = 5.0;
-    float y = 4.0;
-    
-    double rv = mult( x, y );
-    
-	REQUIRE( rv == 20.0 );
-}
-SCENARIO("calculator div", "[div]") {
-    float x = 5.0;
-    float y = 4.0;
-    
-    double rv = div( x, y );
-    
-	REQUIRE( rv == 1.25 );
-}
-SCENARIO("calculator pow4", "[pow4]") {
-    float x = 6.0;
-    float y = 1.0;
-    
-    double rv = pow4( x, y );
-    
-	REQUIRE( rv == 6.0 );
-}
-SCENARIO("calculator sq", "[sq]") {
-    float x = 4.0;
-    
-    double rv = sq( x );
-    
-	REQUIRE( rv == 2.0 );
-}
+      REQUIRE( rv == 7.0);
+  }
+   SCENARIO("calculator sub", "[sub]") {
+     float a = 5.0;
+     float b = 2.0;
+     
+     float rv = sub(a,b);
+      REQUIRE (rv ==3.0);
+   }
+  SCENARIO("calculator multiplication", "[multiplication]") {
+     float a = 5.0;
+     float b = 2.0;
+     
+     float rv = multiplication(a,b);
+      REQUIRE (rv ==10.0);
+   }
+  SCENARIO("calculator division", "[division]") {
+     float a = 5.0;
+     float b = 2.0;
+     
+     float rv = division(a,b);
+      REQUIRE (rv ==2.5);
+   }
+  SCENARIO("calculator involution", "[involution]") {
+     float a = 5.0;
+     float b = 2.0;
+     
+     float rv = involution(a,b);
+      REQUIRE (rv ==25.0);
+   } 
+
+    SCENARIO ("calculator square-root", "[square_root]"){
+    float x = 0.25;
+    double long rv = square_root (x);
+REQUIRE ( rv == 0.5 );
+   }
